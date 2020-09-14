@@ -21,7 +21,7 @@ namespace DOTS
             for (int i = 0; i < playerNumber; i++)
             {
                 var instance = entityManager.Instantiate(prefabEntity);
-                entityManager.SetComponentData(instance, new Translation { Value = new float3(rand.NextFloat(-5, 5), rand.NextFloat(-5, 5), 0) });
+                entityManager.SetComponentData(instance, new Translation { Value = new float3(rand.NextFloat(-5, 5), rand.NextFloat(-5, 5), 0) });              
                 entityManager.SetComponentData(instance, new MoveSpeedComponent { value = rand.NextFloat(1, 3) });
             }
         }
